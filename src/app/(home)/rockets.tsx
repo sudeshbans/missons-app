@@ -1,8 +1,8 @@
 'use client';
 
 import {Card, CardBody, CardFooter, Image} from '@nextui-org/react';
-import { type RocketType } from '@/server/api/api-types';
 import { useRouter } from 'next/navigation'
+import { type RocketType } from '@/server/api/api-types';
 
 type RocketsData = {
     rockets: RocketType[];
@@ -16,7 +16,7 @@ export default function Rockets(rocketsData: RocketsData) {
     }
 
     return (
-        <div className="grid gap-6 grid-cols-4 md:grid-cols-4 lg:grid-cols-4">
+        <div className="grid gap-6 grid-cols-4 md:grid-cols-4 lg:grid-cols-4 pb-5">
             {rocketsData.rockets.map((item, index) => (
                 <span key={index} onClick={() => handleOnPress(item.rocket_id)}>
                <Card >

@@ -21,7 +21,7 @@ export default function SearchBar() {
 
 
     return (
-        <div className="flex p-2 justify-between items-center border-b border-gray-300 flex-wrap">
+        <div className="flex p-2 justify-between items-center flex-wrap pb-4">
         <div className="flex items-center">
             <h2 className="font-bold text-2xl text-white-600">SpaceX Rockets</h2>
         </div>

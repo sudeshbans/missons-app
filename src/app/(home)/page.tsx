@@ -1,8 +1,8 @@
 import { api } from '@/trpc/server';
-import Rockets from './missions/rockets';
+import Rockets from './rockets';
 
-import SearchBar from './missions/search';
-import Missions from './missions/missions';
+import SearchBar from './search';
+import Missions from './missions';
 
 export const revalidate = 3600
 export const dynamic = 'force-static'
